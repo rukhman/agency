@@ -1,0 +1,202 @@
+<main class="container">
+  <mat-drawer-container class="first-block__header" autosize>
+    <mat-drawer #drawer class="first-block__header-sidenav" mode="side">
+      <ul class="our-service-mobile">
+        <li (click)="closeSideNav(drawer)">
+          <h2>
+            <span href="#">Наши Услуги</span>
+          </h2>
+        </li>
+        <li (click)="closeSideNav(drawer); scroll(fourthBlock)">
+          <span href="#" class="">Веб-разработка</span>
+        </li>
+        <li (click)="closeSideNav(drawer); scroll(fifthBlock)">
+          <span href="#" class="">Реклама</span>
+        </li>
+        <li (click)="closeSideNav(drawer); scroll(footer)">
+          <button mat-flat-button>Свяжитесь с нами</button>
+        </li>
+      </ul>
+    </mat-drawer>
+
+    <div class="sidenav-content">
+      <button
+        type="sidenav-content_button"
+        mat-button
+        (click)="drawer.toggle()"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <!-- <a href="#" class="our-service">Наши Услуги</a>
+      <a href="#" class="">Веб-разработка</a>
+      <a href="#" class="">Реклама</a>
+      <a href="#" class="">Свяжитесь с нами</a> -->
+    <!-- <nav class="first-block__mobile-header">
+    <ul class="our-service-mobile">
+      <li>
+        <a href="#">Наши Услуги</a>
+      </li>
+      <li>
+        <a href="#" class="">Веб-разработка</a>
+      </li>
+      <li>
+        <a href="#" class="">Реклама</a>
+      </li>
+      <li>
+        <a href="#" class="">Свяжитесь с нами</a>
+      </li>
+    </ul>
+  </nav> -->
+
+    <div class="first-block" #firstBlock>
+      <div class="first-block__body">
+        <h2>LEAD ENGINEER: ваш цифровой партнер</h2>
+        <p>
+          Добро пожаловать в «Lead Engineer», вашего надежного цифрового
+          партнера. Мы поможем вам оцифровать ваш бизнес, расширить возможности
+          и привлечь новых клиентов.
+        </p>
+      </div>
+    </div>
+    <div class="arrow-link" (click)="scroll(secondBlock)">
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </div>
+
+    <div class="second-block" #secondBlock>
+      <div class="second-block__body">
+        <h2>Об агентстве цифрового маркетинга «Lead Engineer»</h2>
+        <p>
+          Мы являемся агентством цифрового маркетинга полного цикла, которое
+          специализируется на оказании помощи бизнесу в развитии присутствия в
+          сети. Мы предлагаем широкий спектр услуг, включая дизайн и разработку
+          сайтов, поисковую оптимизацию (SEO), маркетинг в социальных сетях и
+          рекламу с оплатой за клик (PPC).
+        </p>
+      </div>
+    </div>
+
+    <div class="thrid-block" #thridBlock>
+      <h2>Наши особенности</h2>
+      <p>
+        Мы агентство по оказанию полного спектра услуг по цифровому маркетингу,
+        которое поможет в достижении ваших бизнес-целей.
+      </p>
+      <ul class="skill-list">
+        <li>
+          <img src="../../../assets/images/skill_1.svg" alt="picture" />
+          <h4>Создание сайта</h4>
+          <p>
+            Мы можем создать профессиональный и удобный сайт, который представит
+            ваш бизнес в сети.
+          </p>
+        </li>
+        <li>
+          <img src="../../../assets/images/skill_2.svg" alt="picture" />
+          <h4>Настройка интернет-магазина</h4>
+          <p>
+            Если вы хотите продавать товары или услуги в сети, мы поможем вам
+            настроить интернет-магазин.
+          </p>
+        </li>
+        <li>
+          <img src="../../../assets/images/skill_3.svg" alt="picture" />
+          <h4>Контекстная реклама</h4>
+          <p>
+            Мы создаем и управляем кампаниями контекстной рекламы, чтобы помочь
+            вам охватить целевую аудиторию.
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="fourth-block" #fourthBlock>
+      <h2>Обеспечим ваш рост</h2>
+      <p>Оцифруем ваш бизнес и приведем новых клиентов</p>
+      <ul class="skill-list">
+        <li>
+          <img src="../../../assets/images/Default_1.jpg" alt="picture" />
+          <div>
+            <h4>Сайты и интернет-магазины</h4>
+            <p>
+              Разрабатываем конверсионные сайты и интернет-магазины, которые
+              вовлекают клиентов и увеличивают продажи.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="../../../assets/images/Default_2.jpg" alt="picture" />
+          <h4>Контекстная реклама</h4>
+          <p>
+            Привлекаем целевую аудиторию с помощью контекстной рекламы и доносим
+            релевантные объявления, которые конвертируются.
+          </p>
+        </li>
+        <li>
+          <img src="../../../assets/images/Default_3.jpg" alt="picture" />
+          <h4>Комплексный маркетинг</h4>
+          <p>
+            Разрабатываем комплексные маркетинговые кампании, которые охватывают
+            различные каналы для создания целостного и эффективного опыта
+            бренда.
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="fifth-block" #fifthBlock>
+      <h2>Наши инновации</h2>
+      <ul class="skill-list">
+        <li>
+          <img src="../../../assets/icons/check.svg" alt="picture" />
+          <div>
+            <h4>Разработка сайтов и интернет-магазинов</h4>
+            <p>
+              Создаем профессиональные сайты и интернет-магазины, способствующие
+              конверсии и продвигающие ваш бренд.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="../../../assets/icons/check.svg" alt="picture" />
+          <div>
+            <h4>Контекстная реклама</h4>
+            <p>
+              Наши таргетированные рекламные стратегии гарантируют, что ваша
+              реклама будет показана нужным людям в нужное время.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="../../../assets/icons/check.svg" alt="picture" />
+          <div>
+            <h4>Интегрированный маркетинг</h4>
+            <p>
+              Мы предоставляем комплексные маркетинговые решения, которые
+              идеально интегрируются с различными каналами.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="footer" #footer>
+      <h3>СВЯЖИТЕСЬ С НАМИ</h3>
+      <div>
+        <a href="tel:+79388757160">+7 938 875-71-60</a>
+      </div>
+      <div>
+        <a href="mailto:aleksei.rukhmanov@yandex.ru">Напишите нам</a>
+      </div>
+      <ul class="networks">
+        <li><img src="../../../assets/icons/x.svg" alt="picture" /></li>
+        <li><img src="../../../assets/icons/vk.svg" alt="picture" /></li>
+        <li>
+          <a href="https://t.me/Fisher303">
+            <img src="../../../assets/icons/tg.svg" alt="picture" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="by"><a href="https://t.me/AleksRukhman">by Rukhmanov</a></div>
+  </mat-drawer-container>
+</main>
