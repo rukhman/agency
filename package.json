@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "gh": "angular-cli-ghpages --dir=dist/agency/browser",
+    "gh": "ng build --configuration production --base-href 'https://rukhman.github.io/agency/'; angular-cli-ghpages --dir=dist/agency/browser",
     "test": "ng test"
   },
   "private": true,

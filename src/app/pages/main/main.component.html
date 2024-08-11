@@ -20,6 +20,7 @@
     </mat-drawer>
 
     <div class="sidenav-content">
+      @if (windowWith < 980) {
       <button
         type="sidenav-content_button"
         mat-button
@@ -27,27 +28,25 @@
       >
         <mat-icon>menu</mat-icon>
       </button>
+      } @else {
+      <ul class="our-service-mobile">
+        <li (click)="closeSideNav(drawer)">
+          <h2>
+            <span href="#">Наши Услуги</span>
+          </h2>
+        </li>
+        <li (click)="closeSideNav(drawer); scroll(fourthBlock)">
+          <span href="#" class="">Веб-разработка</span>
+        </li>
+        <li (click)="closeSideNav(drawer); scroll(fifthBlock)">
+          <span href="#" class="">Реклама</span>
+        </li>
+        <li (click)="closeSideNav(drawer); scroll(footer)">
+          <button mat-flat-button>Свяжитесь с нами</button>
+        </li>
+      </ul>
+      }
     </div>
-    <!-- <a href="#" class="our-service">Наши Услуги</a>
-      <a href="#" class="">Веб-разработка</a>
-      <a href="#" class="">Реклама</a>
-      <a href="#" class="">Свяжитесь с нами</a> -->
-    <!-- <nav class="first-block__mobile-header">
-    <ul class="our-service-mobile">
-      <li>
-        <a href="#">Наши Услуги</a>
-      </li>
-      <li>
-        <a href="#" class="">Веб-разработка</a>
-      </li>
-      <li>
-        <a href="#" class="">Реклама</a>
-      </li>
-      <li>
-        <a href="#" class="">Свяжитесь с нами</a>
-      </li>
-    </ul>
-  </nav> -->
 
     <div class="first-block" #firstBlock>
       <div class="first-block__body">
